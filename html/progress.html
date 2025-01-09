@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    .progress-container {
+      width: 80%;
+      background-color: #f3f3f3;
+      border-radius: 10px;
+      margin: 20px auto;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .progress-bar {
+      height: 30px;
+      width: 0%;
+      background-color: #4caf50;
+      transition: width 0.3s ease;
+    }
+    .buttons {
+      margin: 20px;
+    }
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .add-btn {
+      background-color: #4caf50;
+      color: white;
+    }
+    .remove-btn {
+      background-color: #f44336;
+      color: white;
+    }
+    .items {
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      text-align: left;
+    }
+    .item {
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Progress Bar</h1>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+  <div class="buttons">
+    <button class="add-btn" onclick="addItem()">Add Item</button>
+    <button class="remove-btn" onclick="removeItem()">Remove Item</button>
+  </div>
+  <div class="items" id="items"></div>
+
+  <script>
+    const progressBar = document.getElementById('progress-bar');
+    const itemsContainer = document.getElementById('items');
+    let itemCount = 0;
+    const maxItems = 4;
+
+    function updateProgress() {
+      const progress = (itemCount / maxItems) * 100;
+      progressBar.style.width = progress + '%';
+    }
+
+    function addItem() {
+      if (itemCount < maxItems) {
+        itemCount++;
+        const newItem = document.createElement('div');
+        newItem.className = 'item';
+        newItem.textContent = `Item ${itemCount}`;
+        itemsContainer.appendChild(newItem);
+        updateProgress();
+      } else {
+        alert('Progress is already at 100%!');
+      }
+    }
+
+    function removeItem() {
+      if (itemCount > 0) {
+        itemsContainer.removeChild(itemsContainer.lastChild);
+        itemCount--;
+        updateProgress();
+      } else {
+        alert('No items to remove!');
+      }
+    }
+  </script>
+  
+</body>
+</html>

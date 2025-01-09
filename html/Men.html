@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MEN</title>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: #f7da4c;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div style="text-align: center; color: rgb(0, 0, 0); display: flex; gap: 10px; font-weight: bold;">
+        <p>Free Shipping on order over 1399 EGP</p>
+      </div>
+    </div>
+    <div class="nav">
+      <div id="logo">
+        <h1>TOWN TEAM</h1>
+      </div>
+      <div id="links">
+        <ul>
+          <li><a href="" class="link">MEN</a></li>
+          <li><a href="" class="link">KIDS</a></li>
+          <li id="NEW_ARRIVAL"><a href="" class="link">NEW ARRIVAL</a></li>
+          <li id="SUMMER_CLEARANCE">
+            <a href="" class="link">SUMMER CLEARANCE</a>
+          </li>
+          <li id="PROMOTIONS"><a href="" class="link">WINTER</a></li>
+          <li><a href="" class="link">ALL COLLECTIONS</a></li>
+        </ul>
+      </div>
+      <div id="icons">
+        <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
+        <i class="fa-regular fa-user icon"></i>
+        <i class="fa-regular fa-heart icon"></i>
+        <i class="fa-solid fa-cart-shopping icon"></i>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: black;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div style="text-align: center; color: white; display: flex; gap: 10px">
+        <p>Home</p>
+        <p>></p>
+        <p>MEN COLLECTION</p>
+      </div>
+    </div>
+    <div class="page">
+      <div class="filter-section">
+        <div class="filter-category">
+          <h4 class="filter-title" onclick="Category(this)">
+            Availability
+            <span class="arrow"
+              ><img src="../photos/Path22.png" alt="" srcset=""
+            /></span>
+          </h4>
+          <img src="../photos/line.png" alt="" width="auto" />
+          <div class="filter-items">
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="in-stock"
+                name="availability"
+                value="in-stock"
+              />
+              <label for="in-stock">In stock (213)</label>
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="out-of-stock"
+                name="availability"
+                value="out-of-stock"
+              />
+              <label for="out-of-stock">Out of stock (171)</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-category">
+          <h4 class="filter-title" onclick="Category(this)">
+            Gender &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="arrow"
+              ><img src="../photos/Path22.png" alt="" srcset=""
+            /></span>
+          </h4>
+          <img src="../photos/line.png" alt="" width="auto" />
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="men" name="gender" value="men" />
+              <label for="men">MEN (212)</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-category">
+          <h4 class="filter-title" onclick="Category(this)">
+            PRICE &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+            <span class="arrow"
+              ><img src="../photos/Path22.png" alt="" srcset=""
+            /></span>
+          </h4>
+          <img src="../photos/line.png" alt="" width="auto" />
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="men" name="gender" value="men" />
+              <label for="men">MEN (212)</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-category">
+          <h4 class="filter-title" onclick="Category(this)">
+            BRAND&nbsp; &nbsp; &nbsp;&nbsp;
+            <span class="arrow"
+              ><img src="../photos/Path22.png" alt="" srcset=""
+            /></span>
+          </h4>
+          <img src="../photos/line.png" alt="" width="auto" />
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="men" name="gender" value="men" />
+              <label for="men">Town Team (287)</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-category">
+          <h4 class="filter-title" onclick="Category(this)">
+            COLOR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="arrow"
+              ><img src="../photos/Path22.png" alt="" srcset=""
+            /></span>
+          </h4>
+          <img src="../photos/line.png" alt="" width="auto" />
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="men" name="gender" value="men" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="view">
+          <p>VIEW AS</p>
+          <button type="button" id="gridone">
+            <img src="../photos/Path39.png" alt="" srcset="" />
+          </button>
+          <button type="button" id="gridtwo">
+            <img src="../photos/Path44.png" alt="" srcset="" />
+          </button>
+          <button type="button" id="gridthree">
+            <img src="../photos/Path43.png" alt="" srcset="" />
+          </button>
+          <button type="button" id="gridFour">
+            <img src="../photos/Path49.png" alt="" srcset="" />
+          </button>
+        </div>
+
+        <div class="container">
+          <!-- <div class="card">
+        <div class="sale">
+          <img src="Sale.png"  >
+          <img src="New.png" >
+        </div>
+        <div class="img-contanier">
+          <img
+            src="\/\/townteam.com\/cdn\/shop\/files\/1_7dbf4f2b-dd7a-4277-9104-da9f7be3efcf.png?v=1707829962"
+            alt=""
+            srcset=""
+            class="main-image"
+          />
+          <div>
+            <button type="button">QUICK ADD</button>
+          </div>
+        </div>
+        <div class="data">
+          <div class="dataInfo">
+            <div class="item-name">
+              <p>555555555</p>
+              -
+              <p>adsdadsa</p>
+            </div>
+          </div>
+          <div class="price"><p>LE 544</p></div>
+          <img
+            src="\/\/townteam.com\/cdn\/shop\/files\/1_7dbf4f2b-dd7a-4277-9104-da9f7be3efcf.png?v=1707829962"
+            width="50"
+            height="50"
+            alt=""
+          />
+        </div>
+      </div> -->
+        </div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="SIGN-UP">
+        <h2>SIGN-UP FOR TOWN TEAM NEWSLETTER</h2>
+        <p>
+          be the first to know about our newest arrivals, special offers and
+          store events near you.
+        </p>
+        <form action="">
+          <input
+            id="email"
+            type="email"
+            placeholder="enter your email address"
+          />
+          <button id="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="aboutTwon">
+        <div class="column">
+          <h4>Customer Service</h4>
+          <a href="" class="link">Town Team Terms And Condition</a>
+          <a href="" class="link">TOWN TEAM Privacy Policy</a>
+          <a href="" class="link">Delivery And Returns</a>
+          <a href="" class="link">Terms of Service</a>
+          <a href="" class="link">Refund policy</a>
+        </div>
+        <div class="column">
+          <h4>ABOUT</h4>
+          <a href="" class="link">About TOWN TEAM</a>
+          <a href="" class="link">How To Purchase</a>
+        </div>
+        <div class="column">
+          <h4>CONTACT US</h4>
+          <a href="" class="link">Contact Us</a>
+        </div>
+        <div class="row">
+          <h4>keep in touch</h4>
+          <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="" class="social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="social"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="" class="social"><i class="fa-brands fa-youtube"></i></a>
+          <h4>payment accept</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            width="38"
+            height="24"
+            aria-labelledby="pi-visa"
+          >
+            <title id="pi-visa">Visa</title>
+            <path
+              opacity=".07"
+              d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+            ></path>
+            <path
+              d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
+              fill="#142688"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            width="38"
+            height="24"
+            aria-labelledby="pi-master"
+          >
+            <title id="pi-master">Mastercard</title>
+            <path
+              opacity=".07"
+              d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+            ></path>
+            <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+            <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+            <path
+              fill="#FF5F00"
+              d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"
+            ></path>
+          </svg>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926"
+            data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926 1x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926 2x"
+            alt=""
+            style="height: 30px; max-height: 30px !important"
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926"
+            srcset="
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926   1x,
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=16908979262x
+            "
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=1690897926"
+            data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979261x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979262x"
+            alt=""
+            style="height: 30px; max-height: 30px !important"
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=1690897926"
+            srcset="
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979261x,
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979262x
+            "
+          />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926"
+            data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926 1x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926 2x"
+            alt=""
+            style="height: 30px; max-height: 30px !important"
+            src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926"
+            srcset="
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926   1x,
+              https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=16908979262x
+            "
+          />
+        </div>
+      </div>
+    </section>
+    <section id="copyWrite">
+      <span>&copy;TOWN TEAM</span>
+    </section>
+
+    <!-- <input type="text" placeholder="search" id="searchInput">
+<button type="button" id="Search" >search</button> -->
+    <script src="../js/main.js"></script>
+    <script src="../js/men.js"></script>
+  </body>
+</html>

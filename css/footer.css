@@ -1,0 +1,70 @@
+/* footer Start */
+.footer {
+    background-color: black;
+    padding: 60px;
+  }
+  .footer .SIGN-UP {
+    width: 70%;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+    margin: 0 auto;
+  }
+  .footer .SIGN-UP p {
+    opacity: 0.5;
+    margin-bottom: 40px;
+  }
+  .footer .SIGN-UP form #email {
+    width: 600px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .footer .SIGN-UP form #submit {
+    width: 100px;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: #f7da4c;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  .aboutTwon {
+    display: flex;
+    width: 70%;
+    margin: 80px auto;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+  }
+  .aboutTwon div {
+    width: 20%;
+  }
+  .aboutTwon .column a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+    margin-bottom: 15px;
+  }
+  .aboutTwon div h4 {
+    margin: 30px;
+  }
+  
+  .aboutTwon .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutTwon .row a {
+    color: white;
+    margin-right: 20px;
+  }
+  .aboutTwon .row img,
+  svg {
+    margin-right: 15px;
+  }
+  
+  #copyWrite {
+    text-align: center;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.719);
+  }
+/* footer End */
