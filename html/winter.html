@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -16,6 +17,23 @@
     <title>WINTER</title>
   </head>
   <body>
+    <div id="sidebar">
+      <div class="sidebar-header">
+          <button id="close-sidebar">X</button>
+      </div>
+
+      <form>
+          <p>login with your email</p>
+          <h2>Login</h2>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Log In</button>
+          <input type="button" value="sign-up">
+          <button id="sign">create an account</button>
+      </form>
+  </div>
     <div
       style="
         background-color: #f7da4c;
@@ -31,27 +49,25 @@
     </div>
     <div class="nav">
       <div id="logo">
-        <h1>TOWN TEAM</h1>
+          <h1>TOWN TEAM</h1>
       </div>
       <div id="links">
-        <ul>
-          <li><a href="" class="link">MEN</a></li>
-          <li><a href="" class="link">KIDS</a></li>
-          <li id="NEW_ARRIVAL"><a href="" class="link">NEW ARRIVAL</a></li>
-          <li id="SUMMER_CLEARANCE">
-            <a href="" class="link">SUMMER CLEARANCE</a>
-          </li>
-          <li id="PROMOTIONS"><a href="" class="link">WINTER</a></li>
-          <li><a href="" class="link">ALL COLLECTIONS</a></li>
-        </ul>
+          <ul>
+              <li><a href="../html/Men.html" class="link">MEN</a></li>
+              <li><a href="../html/Kids.html" class="link">KIDS</a></li>
+              <li id="NEW_ARRIVAL"><a href="../html/newarrival.html" class="link">NEW ARRIVAL</a></li>
+              <li id="SUMMER_CLEARANCE"><a href="../html/summer.html" class="link">SUMMER CLEARANCE</a></li>
+              <li id="PROMOTIONS"><a href="../html/winter.html" class="link">WINTER</a></li>
+              <li><a href="../html/Men.html" class="link">ALL COLLECTIONS</a></li>
+          </ul>
       </div>
       <div id="icons">
-        <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
-        <i class="fa-regular fa-user icon"></i>
-        <i class="fa-regular fa-heart icon"></i>
-        <i class="fa-solid fa-cart-shopping icon"></i>
+          <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
+          <i class="fa-regular fa-user icon " id="menu-icon"></i>
+          <i class="fa-regular fa-heart icon"></i>
+          <i class="fa-solid fa-cart-shopping icon" id="cart"></i>
       </div>
-    </div>
+  </div>
     <div
       style="
         background-color: black;
@@ -161,19 +177,21 @@
       <div class="main-container">
         <div class="view">
           <p>VIEW AS</p>
-          <button type="button" id="gridone">
-            <img src="../photos/Path39.png" alt="" srcset="" />
-          </button>
-          <button type="button" id="gridtwo">
-            <img src="../photos/Path44.png" alt="" srcset="" />
+          
+            <button type="button" id="gridone">
+              <img src="../photos/Path39.png" alt="" height="25px" width="25px"/>
+            </button>
+            <button type="button" id="gridtwo">
+            <img src="../photos/Path44.png" alt="" height="25px" width="25px"/>
           </button>
           <button type="button" id="gridthree">
-            <img src="../photos/Path43.png" alt="" srcset="" />
+            <img src="../photos/Path43.png" alt="" height="25px" width="25px"/>
           </button>
           <button type="button" id="gridFour">
-            <img src="../photos/Path49.png" alt="" srcset="" />
+            <img src="../photos/Path49.png" alt="" height="25px" width="25px"/>
           </button>
-        </div>
+        
+      </div>
 
         <div class="container">
           <!-- <div class="card">
@@ -249,10 +267,10 @@
         </div>
         <div class="row">
           <h4>keep in touch</h4>
-          <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="" class="social"><i class="fa-brands fa-instagram"></i></a>
-          <a href="" class="social"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="" class="social"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://web.facebook.com/profile.php?id=100038804617649" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/omaralllaa/" class="social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@townteam98" class="social"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/@TOWNTEAM" class="social"><i class="fa-brands fa-youtube"></i></a>
           <h4>payment accept</h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -337,10 +355,9 @@
     <section id="copyWrite">
       <span>&copy;TWON TEAM</span>
     </section>
-
-    <!-- <input type="text" placeholder="search" id="searchInput">
-<button type="button" id="Search" >search</button> -->
     <script src="../js/main.js"></script>
     <script src="../js/winter.js"></script>
+    <script src="../js/sidebar.js"></script>
+
   </body>
 </html>

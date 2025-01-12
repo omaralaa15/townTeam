@@ -119,14 +119,37 @@ gridFour.addEventListener("click", () => {
   });
 });
 
-//search function
-// document.getElementById("Search").addEventListener("click", () => {
-//     let searchInput = document.getElementById("searchInput").value;
-//     let filteredProducts = jsonData.collection.productVariants.filter((product) =>
-//       product.untranslatedTitle.toLowerCase().includes(searchInput.toLowerCase())
+// search function
+
+
+// document.getElementById("black").addEventListener("click", () => {
+//     let searchInput = document.getElementById("black").value;
+//     let filteredProducts = jsonData.collection.men.filter((product) =>
+//       product.untranslatedTitle.toLowerCase().includes(serchInput.toLowerCase())
 //     );
 //     console.log(filteredProducts);
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ///////Nav Bar///////
 var logo = document.getElementById("logo");
@@ -180,53 +203,26 @@ for (link of links) {
   link.onmouseout = linkOutFun;
 }
 
-function viewProduct() {
-  let viewProduct = document.querySelectorAll(".viewproduct");
-  viewProduct.forEach((element) => {
-    element.addEventListener("click", function () {
-      let productId = element.getAttribute("data-id");
-      window.location.assign("./Product/product.html?id=" + productId);
-    });
-  });
+
+var logo =document.getElementById("logo")
+logo.onclick=function(){
+  location.assign("../HomePage/index.html")
 }
 
-function logout() {
-  localStorage.removeItem("currentUser");
-  window.location.href = "./index.html";
+
+
+/////////////////////searchIcon//////////////
+var search=document.getElementById("search")
+search.onclick=function(){
+    location.assign("../search/search.html")
 }
-
-// let data;
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', './json/winter.json');
-// xhr.onreadystatechange = function() {
-//   if(xhr.readyState === 4 && xhr.status === 200) {
-//     data = JSON.parse(xhr.responseText);
-//     console.log(data);
-//     console.log(data.collection.winter.length);
-//   }
-// };
-// xhr.send();
-
-// let data;
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', './json/summer.json');
-// xhr.onreadystatechange = function() {
-//   if(xhr.readyState === 4 && xhr.status === 200) {
-//     data = JSON.parse(xhr.responseText);
-//     console.log(data);
-//     console.log(data.collection.summer.length);
-//   }
-// };
-// xhr.send();
-
-// let data;
-// var xhr = new XMLHttpRequest();
-// xhr.open('GET', './json/Kids.json');
-// xhr.onreadystatechange = function() {
-//   if(xhr.readyState === 4 && xhr.status === 200) {
-//     data = JSON.parse(xhr.responseText);
-//     console.log(data);
-//     console.log(data.collection.kids.length);
-//   }
-// };
-// xhr.send();
+/////////////////////cartIcon//////////////
+var cart=document.getElementById("cart")
+cart.onclick=function(){
+    location.assign("../html/cart.html")
+}
+/////////////////////create sign up//////////////
+var sign=document.getElementById("sign")
+sign.onclick=function(){
+    location.assign("../sign up/register.html")
+}

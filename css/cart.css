@@ -1,0 +1,252 @@
+/* ---------------------------------------------------------------- */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .message {
+        width: 100%;
+        background-color: #d4af34;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .a #homelink {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .cartheader {
+        display: flex;
+        align-items: center;
+        /* justify-content:space-around; */
+        text-align: left;
+        width: 90em;
+        background-color: #fafafa;
+
+
+    }
+
+    .button-order {
+        width: 100%;
+        height: 50px;
+        background-color: #f7da4c;
+        color: black;
+        border: none;
+        /* font-size: 20px; */
+        padding: 10px 15px 12px;
+        /* font-family: Arsenal;
+        font-weight: bold; */
+        margin-bottom: 10px;
+        font: 1em sans-serif;
+
+    }
+
+    /* ----------------------------------header----------------------------------------- */
+
+    .nav {
+        width: 100%;
+        padding: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: black;
+    }
+
+
+    .nav #links {
+        width: 45%;
+    }
+
+    .nav #links ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 100%;
+    }
+
+    .nav #links ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+
+    }
+    /* /////////////////////// */
+
+    .nav #icons {
+        width: 15%;
+    }
+
+    .nav #icons i {
+        margin: 15px;
+        font-size: 25px;
+        color: white;
+    }
+
+
+    /* -----------------------------progress----------------------------------- */
+    #progressContainer {
+        width: 100%;
+        max-width: 1900px;
+        margin: 20px 20px;
+    }
+
+    progress {
+        width: 100%;
+        height: 25px;
+    }
+
+    /* ---------------------------------footer------------------------------------------ */
+
+    .green {
+        background-color: green;
+    }
+
+    .footer {
+        background-color: black;
+        padding: 60px;
+    }
+
+    .footer .SIGN-UP {
+        width: 70%;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+        margin: 0 auto;
+    }
+
+    .footer .SIGN-UP p {
+        opacity: 0.5;
+        margin-bottom: 40px;
+    }
+
+    .footer .SIGN-UP form #email {
+        width: 600px;
+        height: 50px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    .footer .SIGN-UP form #submit {
+        width: 100px;
+        height: 50px;
+        padding: 15px 30px;
+        background-color: #F7DA4C;
+        margin-bottom: 50px;
+        font-weight: bold;
+
+    }
+
+    .aboutTwon {
+        display: flex;
+        width: 70%;
+        margin: 80px auto;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+    }
+
+    .aboutTwon div {
+        width: 20%;
+    }
+
+    .aboutTwon .column a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.719);
+        margin-bottom: 15px;
+    }
+
+    .aboutTwon div h4 {
+        margin: 30px;
+    }
+
+    .abou * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer {
+        background-color: black;
+        padding: 60px;
+    }
+
+    .footer .SIGN-UP {
+        width: 70%;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+        margin: 0 auto;
+    }
+
+    .footer .SIGN-UP p {
+        opacity: 0.5;
+        margin-bottom: 40px;
+    }
+
+    .footer .SIGN-UP form #email {
+        width: 600px;
+        height: 50px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    .footer .SIGN-UP form #submit {
+        width: 100px;
+        height: 50px;
+        padding: 15px 30px;
+        background-color: #f7da4c;
+        margin-bottom: 50px;
+        font-weight: bold;
+    }
+
+    .aboutTwon {
+        display: flex;
+        width: 70%;
+        margin: 80px auto;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+    }
+
+    .aboutTwon div {
+        width: 20%;
+    }
+
+    .aboutTwon .column a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.719);
+        margin-bottom: 15px;
+    }
+
+    .aboutTwon div h4 {
+        margin: 30px;
+    }
+
+    .aboutTwon .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutTwon .row a {
+        color: white;
+        margin-right: 20px;
+    }
+
+    .aboutTwon .row img,
+    svg {
+        margin-right: 15px;
+    }
+
+    #copyWrite {
+        text-align: center;
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.719);
+    }

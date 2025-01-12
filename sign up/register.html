@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+  <style>
+    /*body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }*/
+
+
+    .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+      width: 400px;
+      /*text-align: center;*/
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+    }
+
+    label {
+      text-align: left;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      background-color: #fdd835;
+      color: #000;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #fbc02d;
+    }
+
+    span {
+      color: red;
+    }
+    /*----------------------------------*/
+   
+.signup-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.social-btn .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.google {
+    background-color: #DB4437;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.facebook:hover {
+    background-color: #365899;
+}
+
+.google:hover {
+    background-color: #c23321;
+}
+
+.twitter:hover {
+    background-color: #1991da;
+}
+
+  </style>
+  <div id="sidebar">
+    <div class="sidebar-header">
+        <button id="close-sidebar">X</button>
+    </div>
+
+    <form>
+        <p>login with your email</p>
+        <h2>Login</h2>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+        <input type="button" value="sign-up">
+    </form>
+</div>
+  <div
+    style="
+      background-color: #f7da4c;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div style="text-align: center; color: rgb(0, 0, 0); display: flex; gap: 10px; font-weight: bold;">
+      <p>Free Shipping on order over 1399 EGP</p>
+    </div>
+  </div>
+  <div class="nav">
+    <div id="logo">
+        <h1>TOWN TEAM</h1>
+    </div>
+    <div id="links">
+        <ul>
+            <li><a href="../html/Men.html" class="link">MEN</a></li>
+            <li><a href="../html/Kids.html" class="link">KIDS</a></li>
+            <li id="NEW_ARRIVAL"><a href="../html/newarrival.html" class="link">NEW ARRIVAL</a></li>
+            <li id="SUMMER_CLEARANCE"><a href="../html/summer.html" class="link">SUMMER CLEARANCE</a></li>
+            <li id="PROMOTIONS"><a href="../html/winter.html" class="link">WINTER</a></li>
+            <li><a href="../html/Men.html" class="link">ALL COLLECTIONS</a></li>
+        </ul>
+    </div>
+    <div id="icons">
+        <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
+        <i class="fa-regular fa-user icon " id="menu-icon"></i>
+        <i class="fa-regular fa-heart icon"></i>
+        <i class="fa-solid fa-cart-shopping icon" id="cart"></i>
+    </div>
+</div>
+  <div class="container">
+    <h1>CREATE ACCOUNT</h1>
+    <p>Please register below to create an account</p>
+
+    <form id="registerForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+      <label for="email">Your Email Address <span>*</span></label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+      <label for="password">Your Password <span>*</span></label>
+      <input type="password" id="password" name="password" placeholder="Your Password" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe To Email Marketing</label>
+      </div>
+
+      <button type="submit" id="createAccountBtn">CREATE AN ACCOUNT</button>
+    </form>
+  </div>
+  <!-- sign-up by facebook-google-twitter -->
+  <div class="signup-container">
+    <div class="social-buttons">
+        <button class="social-btn facebook">
+            <i class="icon">F</i> Sign in with Facebook
+        </button>
+        <button class="social-btn google">
+            <i class="icon">G</i> Sign in with Google
+        </button>
+        <button class="social-btn twitter">
+            <i class="icon">T</i> Sign in with Twitter
+        </button>
+    </div>
+</div>
+<section class="footer">
+  <div class="SIGN-UP">
+    <h2>SIGN-UP FOR TOWN TEAM NEWSLETTER</h2>
+    <p>
+      be the first to know about our newest arrivals, special offers and
+      store events near you.
+    </p>
+    <form action="">
+      <input
+        id="email"
+        type="email"
+        placeholder="enter your email address"
+      />
+      <button id="submit">SUBMIT</button>
+    </form>
+  </div>
+  <div class="aboutTwon">
+    <div class="column">
+      <h4>Customer Service</h4>
+      <a href="" class="link">Town Team Terms And Condition</a>
+      <a href="" class="link">TOWN TEAM Privacy Policy</a>
+      <a href="" class="link">Delivery And Returns</a>
+      <a href="" class="link">Terms of Service</a>
+      <a href="" class="link">Refund policy</a>
+    </div>
+    <div class="column">
+      <h4>ABOUT</h4>
+      <a href="" class="link">About TOWN TEAM</a>
+      <a href="" class="link">How To Purchase</a>
+    </div>
+    <div class="column">
+      <h4>CONTACT US</h4>
+      <a href="" class="link">Contact Us</a>
+    </div>
+    <div class="row">
+      <h4>keep in touch</h4>
+      <a href="https://web.facebook.com/profile.php?id=100038804617649" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/omaralllaa/" class="social"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@townteam98" class="social"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@TOWNTEAM" class="social"><i class="fa-brands fa-youtube"></i></a>
+      <h4>payment accept</h4>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        width="38"
+        height="24"
+        aria-labelledby="pi-visa"
+      >
+        <title id="pi-visa">Visa</title>
+        <path
+          opacity=".07"
+          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+        ></path>
+        <path
+          fill="#fff"
+          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+        ></path>
+        <path
+          d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z"
+          fill="#142688"
+        ></path>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        width="38"
+        height="24"
+        aria-labelledby="pi-master"
+      >
+        <title id="pi-master">Mastercard</title>
+        <path
+          opacity=".07"
+          d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"
+        ></path>
+        <path
+          fill="#fff"
+          d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"
+        ></path>
+        <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+        <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+        <path
+          fill="#FF5F00"
+          d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"
+        ></path>
+      </svg>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926"
+        data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926 1x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926 2x"
+        alt=""
+        style="height: 30px; max-height: 30px !important"
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926"
+        srcset="
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=1690897926   1x,
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-2.png?v=16908979262x
+        "
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=1690897926"
+        data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979261x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979262x"
+        alt=""
+        style="height: 30px; max-height: 30px !important"
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=1690897926"
+        srcset="
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979261x,
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-3.png?v=16908979262x
+        "
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926"
+        data-srcset="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926 1x, https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926 2x"
+        alt=""
+        style="height: 30px; max-height: 30px !important"
+        src="https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926"
+        srcset="
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=1690897926   1x,
+          https://cdn.shopify.com/s/files/1/0565/0982/5214/files/icon-1.png?v=16908979262x
+        "
+      />
+    </div>
+  </div>
+</section>
+<section id="copyWrite">
+  <span>&copy;TOWN TEAM</span>
+</section>
+  <script src="register.js"></script>
+</body>
+
+</html>

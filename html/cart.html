@@ -11,247 +11,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/cart.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
 </head>
-<style>
-    /* -----------------------------header----------------------------------- */
-
-    .message {
-        width: 100%;
-        background-color: #d4af34;
-        color: black;
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-        font-size: x-large;
-    }
-
-    .a #homelink {
-        text-decoration: none;
-        color: black;
-
-    }
-
-    .cartheader {
-        display: flex;
-        align-items: center;
-        /* justify-content:space-around; */
-        text-align: left;
-        width: 90em;
-        background-color: #fafafa;
 
 
-    }
-
-    /* --------------------------------------------------------------------------- */
-
-    .nav {
-        width: 100%;
-        padding: 30px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        color: white;
-        background-color: black;
-    }
-
-
-    .nav #links {
-        width: 45%;
-    }
-
-    .nav #links ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        width: 100%;
-    }
-
-    .nav #links ul li a {
-        text-decoration: none;
-        color: white;
-
-    }
-
-    /* /////////////////////// */
-    #NEW_ARRIVAL::before {
-        content: "New";
-        width: 100px;
-        background-color: #00b79b;
-        padding: 5px 8px;
-        position: relative;
-        top: -28px;
-        left: 120px;
-        font-size: 10px;
-        z-index: 1;
-    }
-
-    #NEW_ARRIVAL::after {
-        content: "";
-        padding: 5px;
-        background-color: #00b79b;
-        position: absolute;
-        top: 27px;
-        left: 728px;
-        transform: rotate(45deg);
-    }
-
-    #SUMMER_CLEARANCE::before {
-        content: "Sale";
-        width: 100px;
-        background-color: #eb471a;
-        padding: 5px 8px;
-        position: relative;
-        top: -28px;
-        left: 190px;
-        font-size: 10px;
-
-    }
-
-    #SUMMER_CLEARANCE::after {
-        content: "";
-        padding: 5px;
-        background-color: #eb471a;
-        position: absolute;
-        top: 27px;
-        left: 965px;
-        transform: rotate(45deg);
-    }
-
-
-
-    #PROMOTIONS::before {
-        content: "Hot";
-        width: 100px;
-        background-color: #eb471a;
-        padding: 5px 8px;
-        position: relative;
-        top: -28px;
-        left: 123px;
-        font-size: 10px;
-    }
-
-    #PROMOTIONS::after {
-        content: "";
-        padding: 5px;
-        background-color: #eb471a;
-        position: absolute;
-        top: 27px;
-        left: 1125px;
-        transform: rotate(45deg);
-    }
-
-    /* /////////////////////// */
-
-    .nav #icons {
-        width: 15%;
-    }
-
-    .nav #icons i {
-        margin: 15px;
-        font-size: 25px;
-        color: white;
-    }
-
-
-    /* -----------------------------progress----------------------------------- */
-    #progressContainer {
-        width: 100%;
-        max-width: 400px;
-        margin: 20px 0;
-    }
-
-    progress {
-        width: 100%;
-        height: 25px;
-    }
-
-    /* ---------------------------------footer------------------------------------------ */
-
-    .green {
-        background-color: green;
-    }
-
-    .footer {
-        background-color: black;
-        padding: 60px;
-    }
-
-    .footer .SIGN-UP {
-        width: 70%;
-        color: white;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.336);
-        margin: 0 auto;
-    }
-
-    .footer .SIGN-UP p {
-        opacity: 0.5;
-        margin-bottom: 40px;
-    }
-
-    .footer .SIGN-UP form #email {
-        width: 600px;
-        height: 50px;
-        margin-right: 10px;
-        padding: 20px;
-    }
-
-    .footer .SIGN-UP form #submit {
-        width: 100px;
-        height: 50px;
-        padding: 15px 30px;
-        background-color: #F7DA4C;
-        margin-bottom: 50px;
-        font-weight: bold;
-
-    }
-
-    .aboutTwon {
-        display: flex;
-        width: 70%;
-        margin: 80px auto;
-        justify-content: space-between;
-        color: white;
-        text-align: center;
-    }
-
-    .aboutTwon div {
-        width: 20%;
-    }
-
-    .aboutTwon .column a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.719);
-        margin-bottom: 15px;
-    }
-
-    .aboutTwon div h4 {
-        margin: 30px;
-    }
-
-    .aboutTwon .column {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutTwon .row a {
-        color: white;
-        margin-right: 20px;
-    }
-
-    .aboutTwon .row img,
-    svg {
-        margin-right: 15px;
-    }
-
-    #copyWrite {
-        text-align: center;
-        padding: 20px;
-        color: rgba(0, 0, 0, 0.719);
-    }
-</style>
 
 <body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <button id="close-sidebar">X</button>
+        </div>
+
+        <form>
+            <p>login with your email</p>
+            <h2>Login</h2>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+            <input type="button" value="sign-up">
+            <button id="sign">create an account</button>
+        </form>
+    </div>
     <div class="message">
         Free Shipping on order over 1399 EGP
     </div>
@@ -263,21 +46,19 @@
         </div>
         <div id="links">
             <ul>
-                <li><a href="" class="link">MEN</a></li>
-                <li><a href="" class="link">KIDS</a></li>
-                <li id="NEW_ARRIVAL"><a href="" class="link">NEW ARRIVAL</a></li>
-                <li id="SUMMER_CLEARANCE"><a href="" class="link">SUMMER CLEARANCE</a></li>
-                <li id="PROMOTIONS"><a href="" class="link">PROMOTIONS</a></li>
-                <li><a href="" class="link">ALL COLLECTIONS</a></li>
+                <li><a href="../html/Men.html" class="link">MEN</a></li>
+                <li><a href="../html/Kids.html" class="link">KIDS</a></li>
+                <li id="NEW_ARRIVAL"><a href="../html/newarrival.html" class="link">NEW ARRIVAL</a></li>
+                <li id="SUMMER_CLEARANCE"><a href="../html/summer.html" class="link">SUMMER CLEARANCE</a></li>
+                <li id="PROMOTIONS"><a href="../html/winter.html" class="link">WINTER</a></li>
+                <li><a href="../html/Men.html" class="link">ALL COLLECTIONS</a></li>
             </ul>
         </div>
         <div id="icons">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-            <i class="fa-regular fa-user icon "></i>
+            <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
+            <i class="fa-regular fa-user icon " id="menu-icon"></i>
             <i class="fa-regular fa-heart icon"></i>
-            <i class="fa-solid fa-cart-shopping icon"><span style="font-size: small;" id="cartCounter">0</span></i>
-            
-
+            <i class="fa-solid fa-cart-shopping icon" id="cart"></i>
         </div>
     </div>
     <!-- -------------------------------------------------------------------------- -->
@@ -305,26 +86,34 @@
 
             </div>
             <div id="cartContainer"></div>
+            <div>
+                <span style="font: 1.2em sans-serif;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/95/95454.png"
+                        style="width: 20px;height: 20px;margin-right: 5px;">
+                    Secure Shopping Guarantee</span>
+            </div>
         </div>
 
-        <div style="width: 250px;">
+        <div style="width: 250px;margin-right: 50px;">
             <h2 style="font: 1.2em sans-serif;">ORDER SUMMARY</h2>
             <hr style="width: 200px;text-align: start;position: absolute;">
             <br>
-            <p style="font: 1em sans-serif;">TOTAL PRICE <span id="totalprice" style="margin-left: 30px;">0</span></p>
+            <p style="font: 1em sans-serif;">Coupon Code</p>
+            <input id="couponCode" placeholder="Enter Coupon Code" style="margin-top: 10px;padding: 10px;width: 100%;">
+            <p style="color: #7a7972;margin-top: 10px;">Coupon code will be applied on the checkout page</p>
+            <br>
+            <p style="font: 1em sans-serif;">Total Price<span id="totalprice"
+                    style="margin-left: 30px;margin-top: 10px;">0</span></p>
+            <br>
+            <button class="button-order" onclick="applyCoupon()">APPLY COUPON</button>
+            <button class="button-order">PROCEED TO CHECKOUT</button>
+            <button class="button-order" id="CONTINUE">CONTINUE SHOPPING</button>
+
+
         </div>
-    </div>
-
-
+    </div> 
     <br><br>
-    <p>Items in cart: <span id="cartCounter">0</span></p>
-    <br><br>
-    <div>
-        <span style="font: 1.2em sans-serif;">
-            <img src="https://cdn-icons-png.flaticon.com/128/95/95454.png"
-                style="width: 20px;height: 20px;margin-right: 5px;">
-            Secure Shopping Guarantee</span>
-    </div>
+    
     <br><br>
     <!-- ---------------------------------------footer----------------------------------------------------- -->
     <section class="footer">
@@ -339,27 +128,27 @@
         <div class="aboutTwon">
             <div class="column">
                 <h4>Customer Service</h4>
-                <a href="">Town Team Terms And Condition</a>
-                <a href="">TOWN TEAM Privacy Policy</a>
-                <a href="">Delivery And Returns</a>
-                <a href="">Terms of Service</a>
-                <a href="">Refund policy</a>
+                <a href="" class="link">Town Team Terms And Condition</a>
+                <a href="" class="link">TOWN TEAM Privacy Policy</a>
+                <a href="" class="link">Delivery And Returns</a>
+                <a href="" class="link">Terms of Service</a>
+                <a href="" class="link">Refund policy</a>
             </div>
             <div class="column">
                 <h4>ABOUT</h4>
-                <a href="">About TOWN TEAM</a>
-                <a href="">How To Purchase</a>
+                <a href="" class="link">About TOWN TEAM</a>
+                <a href="" class="link">How To Purchase</a>
             </div>
             <div class="column">
                 <h4>CONTACT US</h4>
-                <a href="">Contact Us</a>
+                <a href="" class="link">Contact Us</a>
             </div>
             <div class="row">
                 <h4>keep in touch</h4>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="" class="social"><i class="fa-brands fa-youtube"></i></a>
                 <h4>payment accept</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa">
                     <title id="pi-visa">Visa</title>
@@ -401,275 +190,15 @@
         </div>
     </section>
     <section id="copyWrite">
-        <span>&copy;TWON TEAM</span>
+        <span>&copy;TOWN TEAM</span>
     </section>
 
 
-    <script>
-        // ----------------------------------header-----------------------------------------------------
-        //////////////logoHover//////////////////
-        var logo = document.getElementById("logo")
-        logo.onmouseover = function () {
-            logo.style.cursor = "pointer"
-        }
-        //////////////linksHover//////////////////
-        var links = document.getElementsByClassName("link")
-        function linkOverFun(event) {
-            event.target.style.textDecoration = "underline"
-            event.target.style.cursor = "pointer"
-        }
 
-        function linkOutFun(event) {
-            event.target.style.textDecoration = "none"
-        }
-        for (link of links) {
-            link.onmouseover = linkOverFun
-            link.onmouseout = linkOutFun
+    
+    <script src="../js/cart.js"></script>
+    <script src="../js/sidebar.js"></script>
 
-        }
-        ///////////////iconsHover////////////////
-        var icons = document.getElementsByClassName("icon")
-        function iconOverFun(event) {
-            event.target.style.transform = "scale(1.3)"
-            event.target.style.transitionDuration = "0.5s"
-            event.target.style.transitionTimingFunction = "ease-out"
-            event.target.style.cursor = "pointer"
-
-        }
-        function iconOutFun(event) {
-            event.target.style.transform = "scale(1)"
-            event.target.style.transitionDuration = "0.5s"
-            event.target.style.transitionTimingFunction = "ease-in"
-        }
-        for (icon of icons) {
-            icon.onmouseover = iconOverFun
-            icon.onmouseout = iconOutFun
-        }
-        //////////////////////////////////////////////////////////////////////////////////
-        // ----------------------------------cart-----------------------------------------------------
-
-
-        var cart = JSON.parse(localStorage.getItem("cart")) || [];
-        var container = document.getElementById("cartContainer");
-
-        function cartitem() {
-
-            container.innerHTML = ""
-
-            if (cart.length === 0) {
-                container.textContent = "Your cart is empty.";
-            } else {
-                cart.forEach(function (item) {
-
-                    item.quantity = item.quantity || 1;
-
-                    var div = document.createElement("div");
-                    div.style.display = "flex";
-                    div.style.alignItems = "center";
-                    div.style.justifyContent = "space-between"
-                    div.style.border = "1px solid #ccc";
-                    div.style.padding = "10px";
-                    div.style.margin = "10px";
-                    div.style.display = "flex";
-                    div.style.width = "90em";
-                    //div.style.width = "70%";
-                    div.style.height = "150px";
-                    div.className = "itemsp"
-
-                    var img = document.createElement("img");
-                    img.src = item.image;
-                    img.style.width = "150px";
-                    img.style.height = "150px";
-                    img.style.marginRight = "20px";
-
-                    var title = document.createElement("h3");
-                    title.textContent = item.title;
-                    title.style.fontSize = "18px";
-                    title.style.fontWeight = "600";
-                    title.style.color = "#333";
-                    title.style.marginBottom = "5px";
-
-                    var price = document.createElement("p");
-                    price.textContent = `$${(item.price) * item.quantity.toFixed(2)}`;
-                    price.style.marginLeft = "20px";
-                    price.style.marginright = "20px";
-
-                    var priceitem = document.createElement("p");
-                    priceitem.textContent = `$${item.price}`;
-                    priceitem.style.marginLeft = "20px";
-                    priceitem.style.marginright = "20px";
-
-
-                    var amount = document.createElement("div");
-                    amount.style.display = "flex";
-                    amount.style.border = "1px solid #ccc";
-                    amount.style.height = "50px"
-                    amount.style.marginLeft = "20px";
-                    amount.style.marginright = "20px";
-                    amount.style.alignItems = "center";
-                    amount.style.gap = "10px";
-                    amount.innerHTML = `
-                        <button class="minusbtn">-</button>
-                        <span class="itemcount">${item.quantity}</span>
-                        <button class="plusbtn">+</button>
-                    `;
-
-                    var buttons = amount.querySelectorAll("button");
-                    buttons.forEach(button => {
-                        button.style.padding = "8px 15px";
-                        button.style.border = "none";
-                        button.style.cursor = "pointer";
-                        button.style.backgroundColor = "#fff";
-                        button.style.color = "#333";
-                    });
-
-                    var remove = document.createElement("button")
-                    remove.textContent = "x"
-                    remove.className = "removefromcart";
-                    remove.style.textAlign = "center"
-                    remove.style.width = "50px";
-                    remove.style.height = "50px";
-                    remove.style.marginLeft = "20px";
-                    //remove.style.padding = "5px 10px";
-                    remove.style.backgroundColor = "#fff";
-                    remove.style.color = "black";
-                    remove.style.border = "none";
-                    remove.style.cursor = "pointer";
-                    remove.style.fontSize = "16px";
-                    remove.addEventListener("click", function () {
-                        removeFromCart(item, div)
-                    });
-
-                    amount.querySelector(".plusbtn").addEventListener("click", function () {
-                        item.quantity = Number(item.quantity) + 1;
-                        updateCart();
-                        cartitem(); // Re-render the cart to reflect changes
-                        updateCartCounter();
-                        totalprice()
-
-                    });
-
-                    amount.querySelector(".minusbtn").addEventListener("click", function () {
-                        if (item.quantity > 1) {
-                            item.quantity = Number(item.quantity) - 1;
-                            updateCart();
-                            cartitem();
-                            updateCartCounter();
-                            totalprice()
-
-                        }
-                    });
-
-
-
-                    div.appendChild(img);
-                    div.appendChild(title);
-                    div.appendChild(priceitem);
-                    div.appendChild(amount);
-                    div.appendChild(price);
-                    div.appendChild(remove)
-
-                    container.appendChild(div);
-                })
-            }
-            updateCartCounter()
-            totalprice()
-
-        }
-
-        function removeFromCart(item, div) {
-            cart = cart.filter(function (cartItem) {
-                return cartItem.title !== item.title;
-            });
-            updateCart();
-            div.style.display = "none";
-            cartitem();
-            updateCartCounter()
-            totalprice()
-
-        }
-
-        function updateCart() {
-            localStorage.setItem("cart", JSON.stringify(cart));
-        }
-
-        function updateCartCounter() {
-            const cart = JSON.parse(localStorage.getItem("cart")) || [];
-            const totalItems = cart.reduce((total, item) => total + Number(item.quantity), 0);
-            document.getElementById("cartCounter").textContent = totalItems;
-        }
-        cartitem();
-
-
-        function totalprice(cart) {
-            cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-            // const totalprice = cart.reduce(function (total, item) {
-            //     return total + (Number(item.price) * (item.quantity || 1));  // Handle quantity if it's undefined
-            // }, 0);
-            const totalprice = cart.reduce((total, item) => total + Number(item.price) * (item.quantity || 1), 0);
-            document.getElementById("totalprice").textContent = `$${totalprice.toFixed(2)}`;
-        }
-        totalprice(cart);
-        cartitem();
-
-
-        function AddToCart(item) {
-            var cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-            var existingItem = cart.find(cartItem => cartItem.title === item.title);
-
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                item.quantity = 1;
-                cart.push(item);
-            }
-
-            localStorage.setItem("cart", JSON.stringify(cart));
-            updateCartCounter();
-            totalprice()
-        }
-
-        // function progress() {
-        //     var prog=document.createElement("progress")
-        // }
-
-        function updateProgressBar() {
-            var totalPrice = totalprice(cart);
-            var progressBar = document.getElementById('progressBar');
-            var totalPriceElement = document.getElementById('totalPrice');
-            var maxPrice = 1399;  // Maximum price for full progress
-
-            // Check if totalPrice is a valid number before updating progress bar
-            // if (isNaN(totalPrice) || totalPrice < 0) {
-            //     console.error("Invalid total price:", totalPrice);
-            //     return;
-            // }
-
-            // Calculate progress as a percentage of maxPrice
-
-            let progress = (totalPrice / maxPrice) * 100;
-            if (progress > 100) {
-                progress = 100; // Cap the progress at 100%
-            }
-            //var progress = Math.min((totalPrice / maxPrice) * 100, 100); // Ensure it doesn't go over 100%
-
-            // Update the progress bar value
-            progressBar.value = progress;
-
-            // Update the total price display
-            totalPriceElement.textContent = `Total Price: $${progress}%`;
-
-            // Change the progress bar color based on the price
-            if (totalPrice >= maxPrice) {
-                progressBar.classList.add('green');
-            } else {
-                progressBar.classList.remove('green');
-            }
-        }
-        updateProgressBar();
-    </script>
 </body>
 
 </html>
