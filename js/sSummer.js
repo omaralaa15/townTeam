@@ -201,7 +201,7 @@ for (link of links) {
 ////////////////////
 var logo =document.getElementById("logo")
 logo.onclick=function(){
-  location.assign("../HomePage/index.html")
+  location.assign("../index.html")
 }
 /////////////////////searchIcon//////////////
 var search=document.getElementById("search")

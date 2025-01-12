@@ -190,38 +190,38 @@ copyWrite.innerHTML+=data
 /////////////////////searchIcon//////////////
 var search=document.getElementById("search")
 search.onclick=function(){
-    location.assign("../search/search.html")
+    location.assign("search/search.html")
 }
 
 /////////////////////cartIcon//////////////
 var cart=document.getElementById("cart")
 cart.onclick=function(){
-    location.assign("../html/cart.html")
+    location.assign("html/cart.html")
 }
 /////////////////////headImg//////////////
 var headImg=document.getElementById("headImg")
 headImg.onclick=function(){
-    location.assign("../html/newarrival.html")
+    location.assign("html/newarrival.html")
 }
 /////////////////////collectionOne//////////////
 var collectionOne=document.getElementById("collectionOne")
 collectionOne.onclick=function(){
-    location.assign("../html/men.html")
+    location.assign("html/men.html")
 }
 /////////////////////collectionTwo//////////////
 var collectionTwo=document.getElementById("collectionTwo")
 collectionTwo.onclick=function(){
-    location.assign("../html/kids.html")
+    location.assign("html/kids.html")
 }
 /////////////////////collectionThree//////////////
 var collectionThree=document.getElementById("collectionThree")
 collectionThree.onclick=function(){
-    location.assign("../html/summer.html")
+    location.assign("html/summer.html")
 }
 /////////////////////headImg//////////////
 var slider=document.querySelector(".slider")
 slider.onclick=function(){
-    location.assign("../html/men.html")
+    location.assign("html/men.html")
 }
 //////////////scroll////////////
 var scrolll=document.getElementById("scroll")
@@ -245,7 +245,7 @@ scrolll.onclick=function(){
 /////////////////////create sign up//////////////
 var sign=document.getElementById("sign")
 sign.onclick=function(){
-    location.assign("../sign up/register.html")
+    location.assign("sign up/register.html")
 }
 
 
