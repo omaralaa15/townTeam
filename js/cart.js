@@ -287,6 +287,12 @@
             link.onmouseout = linkOutFun
 
         }
+
+/////////////////////searchIcon//////////////
+var search=document.getElementById("search")
+search.onclick=function(){
+    location.assign("../search/search.html")
+}
 //////////CONTINUE button //////////////
 var CONTINUE=document.getElementById("CONTINUE")
 CONTINUE.onclick=function(){

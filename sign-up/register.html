@@ -161,7 +161,7 @@
 }
 
   </style>
-  <div id="sidebar">
+  <!-- <div id="sidebar">
     <div class="sidebar-header">
         <button id="close-sidebar">X</button>
     </div>
@@ -174,9 +174,9 @@
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Password" required>
         <button type="submit">Log In</button>
-        <input type="button" value="sign-up">
+        <button id="sign">create an account</button>
     </form>
-</div>
+</div> -->
   <div
     style="
       background-color: #f7da4c;
@@ -211,33 +211,35 @@
         <i class="fa-solid fa-cart-shopping icon" id="cart"></i>
     </div>
 </div>
-  <div class="container">
-    <h1>CREATE ACCOUNT</h1>
-    <p>Please register below to create an account</p>
+<div class="container">
+  <!-- Sign-Up Form -->
+  <h1>CREATE ACCOUNT</h1>
+  <p>Please register below to create an account</p>
+  <form id="registerForm">
+    <label for="firstName">First Name <span>*</span></label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
 
-    <form id="registerForm">
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstName" placeholder="First Name">
+    <label for="lastName">Last Name <span>*</span></label>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
 
-      <label for="lastName">Last Name</label>
-      <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+    <label for="emailSignUp">Email Address <span>*</span></label>
+    <input type="email" id="emailSignUp" name="emailSignUp" placeholder="Your Email Address" required>
 
-      <label for="email">Your Email Address <span>*</span></label>
-      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+    <label for="passwordSignUp">Password <span>*</span></label>
+    <input type="password" id="passwordSignUp" name="passwordSignUp" placeholder="Your Password" required>
 
-      <label for="password">Your Password <span>*</span></label>
-      <input type="password" id="password" name="password" placeholder="Your Password" required>
+    <div class="checkbox">
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to Email Marketing</label>
+    </div>
 
-      <div class="checkbox">
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Subscribe To Email Marketing</label>
-      </div>
-
-      <button type="submit" id="createAccountBtn">CREATE AN ACCOUNT</button>
-    </form>
+    <button type="submit" id="createAccountBtn">CREATE AN ACCOUNT</button>
+  </form>
   </div>
+
+
   <!-- sign-up by facebook-google-twitter -->
-  <div class="signup-container">
+   <div class="signup-container">
     <div class="social-buttons">
         <button class="social-btn facebook">
             <i class="icon">F</i> Sign in with Facebook
@@ -249,7 +251,7 @@
             <i class="icon">T</i> Sign in with Twitter
         </button>
     </div>
-</div>
+</div> 
 <section class="footer">
   <div class="SIGN-UP">
     <h2>SIGN-UP FOR TOWN TEAM NEWSLETTER</h2>
@@ -373,8 +375,40 @@
 </section>
 <section id="copyWrite">
   <span>&copy;TOWN TEAM</span>
-</section>
+</section> 
+
+
+
+
+
+
+
+
+<!-- <h1>Login and Sign Up</h1>
+  <form id="signup-form">
+    <h2>Sign Up</h2>
+    <input type="text" id="signup-username" placeholder="Enter Username" required>
+    <input type="password" id="signup-password" placeholder="Enter Password" required>
+    <button type="button" onclick="signUp()">Sign Up</button>
+  </form>
+  <form id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Enter Username" required>
+    <input type="password" id="login-password" placeholder="Enter Password" required>
+    <button type="button" onclick="login()">Login</button>
+  </form> -->
+
+
+
+
+
+
+
+
+
   <script src="register.js"></script>
+  <script src="../js/sidebar.js"></script>
+
 </body>
 
 </html>

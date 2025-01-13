@@ -224,5 +224,5 @@ cart.onclick=function(){
 /////////////////////create sign up//////////////
 var sign=document.getElementById("sign")
 sign.onclick=function(){
-    location.assign("../sign up/register.html")
+    location.assign("../sign-up/register.html")
 }

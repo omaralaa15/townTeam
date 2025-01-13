@@ -106,3 +106,56 @@ function viewProduct() {
     });
   });
 }
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+  }
+}
+const con = document.querySelector(".container")
+//black
+document.getElementById("black").addEventListener("click", () => {
+  let filteredProducts = data.collection.winter.filter((product) =>
+    product.title.toLowerCase().includes("black")
+  );
+  console.log(filteredProducts);
+  removeAllChildNodes(con)
+  displayData(filteredProducts);
+});
+//red
+document.getElementById("red").addEventListener("click", () => {
+  let filteredProducts = data.collection.winter.filter((product) =>
+    product.title.toLowerCase().includes("red")
+  );
+  console.log(filteredProducts);
+  removeAllChildNodes(con)
+  displayData(filteredProducts);
+});
+//Yellow
+document.getElementById("Yellow").addEventListener("click", () => {
+  let filteredProducts = data.collection.winter.filter((product) =>
+    product.title.includes("Yellow")
+  );
+  console.log(filteredProducts);
+  removeAllChildNodes(con)
+  displayData(filteredProducts);
+});
+
+//blue
+document.getElementById("blue").addEventListener("click", () => {
+  let filteredProducts = data.collection.winter.filter((product) =>
+    product.title.toLowerCase().includes("blue")
+  );
+  console.log(filteredProducts);
+  removeAllChildNodes(con)
+  displayData(filteredProducts);
+});
+//orange
+document.getElementById("orange").addEventListener("click", () => {
+  let filteredProducts = data.collection.winter.filter((product) =>
+    product.title.toLowerCase().includes("orange")
+  );
+  console.log(filteredProducts);
+  removeAllChildNodes(con)
+  displayData(filteredProducts);
+});
