@@ -92,17 +92,14 @@ function displayData(data) {
     viewProduct();
   });
 }
-// let cartButton = document.createElement("button");
-// cartButton.textContent = "View Cart";
-// cartButton.addEventListener("click", opencart);
-// document.body.appendChild(cartButton);
+
 
 function viewProduct() {
   const cardId = document.querySelectorAll(".main-image");
   cardId.forEach((card) => {
     card.addEventListener("click", () => {
       const productId = card.getAttribute("id");
-      window.location.assign(`../html/singleWinter.html?id=${productId}`);
+      window.location.assign(`../html/SingleWinter.html?id=${productId}`);
     });
   });
 }

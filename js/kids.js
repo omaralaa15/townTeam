@@ -102,7 +102,7 @@ function viewProduct() {
   cardId.forEach((card) => {
     card.addEventListener("click", () => {
       const productId = card.getAttribute("id");
-      window.location.assign(`../html/singlekids.html?id=${productId}`);
+      window.location.assign(`../html/singleKids.html?id=${productId}`);
     });
   });
 }
