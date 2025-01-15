@@ -218,11 +218,7 @@ var collectionThree=document.getElementById("collectionThree")
 collectionThree.onclick=function(){
     location.assign("html/summer.html")
 }
-/////////////////////headImg//////////////
-var slider=document.querySelector(".slider")
-slider.onclick=function(){
-    location.assign("html/men.html")
-}
+
 //////////////scroll////////////
 var scrolll=document.getElementById("scroll")
 

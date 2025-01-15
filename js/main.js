@@ -5,22 +5,18 @@ function Category(element) {
 
   if (items.style.display === "block") {
     items.style.display = "none";
-    arrow.innerHTML = `<img src="../photos/Path22.png" alt="" srcset="">`; // Arrow down
+    arrow.innerHTML = `<img src="../photos/Path22.png">`; 
   } else {
     items.style.display = "block";
-    arrow.innerHTML = `<img src="../photos/Path13.png" alt="" srcset="">`; // Arrow up
+    arrow.innerHTML = `<img src="../photos/Path13.png">`; 
   }
 }
 
-let men = document.getElementById("men");
-console.log(men);
-men.addEventListener("change", () => {
-  console.log(men.checked);
-});
 
 var gridone = document.getElementById("gridone");
 gridone.addEventListener("click", () => {
-  document.querySelector(".container").style = `display: grid;
+  document.querySelector(".container").style = `
+  display: grid;
   grid-template-columns: repeat(1, 1fr);`;
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
@@ -28,7 +24,7 @@ gridone.addEventListener("click", () => {
   });
   const imageContainer = document.querySelectorAll(".img-contanier");
   imageContainer.forEach((imageContainer) => {
-    imageContainer.style = "width:35%";
+  imageContainer.style = "width:35%";
   });
   const data = document.querySelectorAll(".data");
   data.forEach((data) => {
@@ -119,16 +115,6 @@ gridFour.addEventListener("click", () => {
   });
 });
 
-// search function
-
-
-// document.getElementById("black").addEventListener("click", () => {
-//     let searchInput = document.getElementById("black").value;
-//     let filteredProducts = jsonData.collection.men.filter((product) =>
-//       product.untranslatedTitle.toLowerCase().includes(serchInput.toLowerCase())
-//     );
-//     console.log(filteredProducts);
-// });
 
 
 
@@ -226,3 +212,5 @@ var sign=document.getElementById("sign")
 sign.onclick=function(){
     location.assign("../sign-up/register.html")
 }
+
+/////////////////////////////////////////////

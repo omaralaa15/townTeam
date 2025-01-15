@@ -5,35 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="../css/cart.css">
-        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="shortcut icon" href="//townteam.com/cdn/shop/files/icon2_32x32.png?v=1719821592" type="image/png">
+
+        
 </head>
 
 
-
 <body>
-    <div id="sidebar">
-        <div class="sidebar-header">
-            <button id="close-sidebar">X</button>
-        </div>
-
-        <form>
-            <p>login with your email</p>
-            <h2>Login</h2>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Email Address" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-            <button id="sign">create an account</button>
-        </form>
-    </div>
     <div class="message">
         Free Shipping on order over 1399 EGP
     </div>
@@ -47,17 +32,17 @@
             <ul>
                 <li><a href="../html/Men.html" class="link">MEN</a></li>
                 <li><a href="../html/Kids.html" class="link">KIDS</a></li>
-                <li id="NEW_ARRIVAL"><a href="../html/newarrival.html" class="link">NEW ARRIVAL</a></li>
-                <li id="SUMMER_CLEARANCE"><a href="../html/summer.html" class="link">SUMMER CLEARANCE</a></li>
-                <li id="PROMOTIONS"><a href="../html/winter.html" class="link">WINTER</a></li>
+                <li><a href="../html/newarrival.html" class="link">NEW ARRIVAL</a></li>
+                <li><a href="../html/summer.html" class="link">SUMMER CLEARANCE</a></li>
+                <li><a href="../html/winter.html" class="link">WINTER</a></li>
                 <li><a href="../html/Men.html" class="link">ALL COLLECTIONS</a></li>
             </ul>
         </div>
         <div id="icons">
             <i id="search" class="fa-solid fa-magnifying-glass icon"></i>
-            <i class="fa-regular fa-user icon " id="menu-icon"></i>
+            <i class="fa-regular fa-user icon"></i>
             <i class="fa-regular fa-heart icon"></i>
-            <i class="fa-solid fa-cart-shopping icon" id="cart"></i>
+            <i class="fa-solid fa-cart-shopping icon"><span style="font-size: small;" id="cartCounter">0</span></i>
         </div>
     </div>
     <!-- -------------------------------------------------------------------------- -->
@@ -106,7 +91,7 @@
             <br>
             <button class="button-order" onclick="applyCoupon()">APPLY COUPON</button>
             <button class="button-order">PROCEED TO CHECKOUT</button>
-            <button class="button-order" id="CONTINUE">CONTINUE SHOPPING</button>
+            <button class="button-order" id="con">CONTINUE SHOPPING</button>
 
 
         </div>
@@ -193,11 +178,7 @@
     </section>
 
 
-
-    
-    <script src="../js/cart.js"></script>
-    <script src="../js/sidebar.js"></script>
-
+   <script src="../js/cart.js"></script>
 </body>
 
 </html>

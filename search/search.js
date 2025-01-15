@@ -53,13 +53,6 @@ function getDataMen() {
 }
 getDataMen();
 
-
-
-
-
-
-
-
 ///////////////////////////////
 var closee=document.getElementById("close")
 closee.onmouseover=function(){
@@ -67,6 +60,6 @@ closee.onmouseover=function(){
 }
 closee.onclick=function(){
     window.close()
-    open("../HomePage/index.html")
+    location.assign("../index.html")
 }
 

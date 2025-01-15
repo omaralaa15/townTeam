@@ -92,10 +92,7 @@ function displayData(data) {
     viewProduct();
   });
 }
-// let cartButton = document.createElement("button");
-// cartButton.textContent = "View Cart";
-// cartButton.addEventListener("click", opencart);
-// document.body.appendChild(cartButton);
+
 
 function viewProduct() {
   const cardId = document.querySelectorAll(".main-image");
@@ -143,7 +140,6 @@ document.getElementById("Yellow").addEventListener("click", () => {
   removeAllChildNodes(con)
   displayData(filteredProducts);
 });
-
 //blue
 document.getElementById("blue").addEventListener("click", () => {
   let filteredProducts = data.collection.men.filter((product) =>

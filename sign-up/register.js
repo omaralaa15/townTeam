@@ -1,41 +1,88 @@
-let users = JSON.parse(localStorage.getItem("users")) || [];
 
-// Function for Sign-Up
-function signUp(event) {
-  event.preventDefault();
-
-  const firstName = document.getElementById("firstName").value.trim();
-  const lastName = document.getElementById("lastName").value.trim();
-  const email = document.getElementById("emailSignUp").value.trim();
-  const password = document.getElementById("passwordSignUp").value.trim();
-  const subscribe = document.getElementById("subscribe").checked;
-
-  // Validate inputs
-  if (!firstName || !lastName || !email || !password) {
-    alert("Please fill out all required fields.");
-    return;
+function showForm(form) {
+  if (form === 'login') {
+    document.getElementById('login-form').classList.add('active');
+    document.getElementById('register-form').classList.remove('active');
+  } else {
+    document.getElementById('login-form').classList.remove('active');
+    document.getElementById('register-form').classList.add('active');
   }
-
-  // Check if email already exists
-  const userExists = users.some(user => user.email === email);
-  if (userExists) {
-    alert("Email already exists.");
-    return;
-  }
-
-  // Add user to Local Storage
-  users.push({ firstName, lastName, email, password, subscribe });
-  localStorage.setItem("users", JSON.stringify(users));
-
-  alert("Account created successfully!");
-  document.getElementById("registerForm").reset();
 }
 
+//register function
+function register(event) {
+  event.preventDefault(); 
+  const username = document.getElementById('register-username').value.trim();
+  const email = document.getElementById('register-email').value.trim();
+  const password = document.getElementById('register-password').value.trim();
+  const errorDiv = document.getElementById('register-error');
+
+  errorDiv.textContent = '';
+
+  if (!username || !email || !password) {
+    errorDiv.textContent = 'All fields are required!';
+    return;
+  }
+
+  if (!email.includes('@')) {
+    errorDiv.textContent = 'Invalid email format!';
+    return;
+  }
+
+  const users = JSON.parse(localStorage.getItem('users')) || []; 
+  if (users.some(user => user.username === username)) {
+    errorDiv.textContent = 'Username already exists!';
+    return;
+  }
+
+  users.push({ username, email, password });
+  localStorage.setItem('users', JSON.stringify(users));
+  alert('Registration successful!');
+  showForm('login');
+}
+
+// Login function
+function login(event) {
+  event.preventDefault(); // Prevent form submission
+  const username = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const errorDiv = document.getElementById('login-error');
+
+  errorDiv.textContent = ''; // Clear previous errors
+
+  if (!username || !password) {
+    errorDiv.textContent = 'All fields are required!';
+    return;
+  }
+
+  const users = JSON.parse(localStorage.getItem('users')) || []; 
+  const user = users.find(user => user.email === username && user.password === password);
+
+  if (!user) {
+    errorDiv.textContent = 'Invalid username or password!';
+  } else {
+    alert('Login successful!');
+    
+    location.assign('../html/men.html'); 
+  }
+}
+
+function logout() {
+  localStorage.removeItem("users");
+  alert('logout successful!');
+  window.location.href = './index.html';
+}
+
+
+
+
+
+
 // Attach event listeners
-document.getElementById("registerForm").addEventListener("submit", signUp);
+document.getElementById("registerForm").addEventListener("submit", register);
 document.getElementById("loginForm").addEventListener("submit", login);
 
-
+// Social media login buttons
 document.querySelector('.facebook').addEventListener('click', function () {
   alert('Redirecting to Facebook login...');
   window.location.href = 'https://www.facebook.com/';
@@ -51,14 +98,13 @@ document.querySelector('.twitter').addEventListener('click', function () {
   window.location.href = 'https://www.twitter.com/';
 });
 
-
-
-///////Nav Bar///////
+// Navbar logo hover effect
 var logo = document.getElementById("logo");
 logo.onmouseover = function () {
   logo.style.cursor = "pointer";
 };
-//////////////linksHover//////////////////
+
+// Links hover effect
 var links = document.getElementsByClassName("link");
 function linkOverFun(event) {
   event.target.style.textDecoration = "underline";
@@ -68,11 +114,13 @@ function linkOverFun(event) {
 function linkOutFun(event) {
   event.target.style.textDecoration = "none";
 }
-for (link of links) {
+
+for (var link of links) {
   link.onmouseover = linkOverFun;
   link.onmouseout = linkOutFun;
 }
-///////////////iconsHover////////////////
+
+// Icons hover effect
 var icons = document.getElementsByClassName("icon");
 function iconOverFun(event) {
   event.target.style.transform = "scale(1.3)";
@@ -80,51 +128,38 @@ function iconOverFun(event) {
   event.target.style.transitionTimingFunction = "ease-out";
   event.target.style.cursor = "pointer";
 }
+
 function iconOutFun(event) {
   event.target.style.transform = "scale(1)";
   event.target.style.transitionDuration = "0.5s";
   event.target.style.transitionTimingFunction = "ease-in";
 }
-for (icon of icons) {
+
+for (var icon of icons) {
   icon.onmouseover = iconOverFun;
   icon.onmouseout = iconOutFun;
 }
 
-/////////FOOTER/////////
-var links = document.getElementsByClassName("link");
-function linkOverFun(event) {
-  event.target.style.textDecoration = "underline";
-  event.target.style.cursor = "pointer";
-}
-
-function linkOutFun(event) {
-  event.target.style.textDecoration = "none";
-}
-for (link of links) {
+// Footer links hover effect (this was duplicated, now fixed)
+var footerLinks = document.getElementsByClassName("footer-link");
+for (var link of footerLinks) {
   link.onmouseover = linkOverFun;
   link.onmouseout = linkOutFun;
 }
 
+// Redirection actions for icons and buttons
+document.getElementById("logo").onclick = function () {
+  location.assign("../index.html");
+};
 
-var logo =document.getElementById("logo")
-logo.onclick=function(){
-  location.assign("../index.html")
-}
+document.getElementById("search").onclick = function () {
+  location.assign("../search/search.html");
+};
 
+document.getElementById("cart").onclick = function () {
+  location.assign("../html/cart.html");
+};
 
-
-/////////////////////searchIcon//////////////
-var search=document.getElementById("search")
-search.onclick=function(){
-    location.assign("../search/search.html")
-}
-/////////////////////cartIcon//////////////
-var cart=document.getElementById("cart")
-cart.onclick=function(){
-    location.assign("../html/cart.html")
-}
-/////////////////////create sign up//////////////
-var sign=document.getElementById("sign")
-sign.onclick=function(){
-    location.assign("../sign up/register.html")
-}
+document.getElementById("sign").onclick = function () {
+  location.assign("../sign up/register.html");
+};
