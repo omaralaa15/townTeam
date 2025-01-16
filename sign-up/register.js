@@ -43,12 +43,12 @@ function register(event) {
 
 // Login function
 function login(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(); 
   const username = document.getElementById('email').value.trim();
   const password = document.getElementById('password').value.trim();
   const errorDiv = document.getElementById('login-error');
 
-  errorDiv.textContent = ''; // Clear previous errors
+  errorDiv.textContent = ''; 
 
   if (!username || !password) {
     errorDiv.textContent = 'All fields are required!';
@@ -148,18 +148,18 @@ for (var link of footerLinks) {
 }
 
 // Redirection actions for icons and buttons
-document.getElementById("logo").onclick = function () {
-  location.assign("../index.html");
-};
 
-document.getElementById("search").onclick = function () {
-  location.assign("../search/search.html");
-};
-
-document.getElementById("cart").onclick = function () {
-  location.assign("../html/cart.html");
-};
-
-document.getElementById("sign").onclick = function () {
-  location.assign("../sign up/register.html");
-};
+var logo =document.getElementById("logo")
+logo.onclick=function(){
+  location.assign("../index.html")
+}
+/////////////////////searchIcon//////////////
+var search=document.getElementById("search")
+search.onclick=function(){
+    location.assign("../search/search.html")
+}
+/////////////////////cartIcon//////////////
+var cart=document.getElementById("cart")
+cart.onclick=function(){
+    location.assign("../html/cart.html")
+}

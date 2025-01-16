@@ -242,8 +242,6 @@ scrolll.onclick=function(){
 var sign=document.getElementById("sign")
 sign.onclick=function(){
     location.assign("../sign-up/register.html")
-
-
 }
 ///////////////////logo////////
 var logo =document.getElementById("logo")
